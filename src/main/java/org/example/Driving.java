@@ -20,6 +20,7 @@ public class Driving
 
     public void VerifyAge()
     {
+        String finalOut = null;
 
         //decide which case we have based on the persons age
         int result = this.age >= 16 ? 1 : 2;
@@ -27,15 +28,16 @@ public class Driving
         //if the person is older than or is 16
         if(result == 1)
         {
-            System.out.print("You are old enough to legally drive.");
+            finalOut = "You are old enough to legally drive.";
         }
 
         //if they are younger
         if(result == 2)
         {
-            System.out.print("You are not old enough to legally drive.");
+            finalOut = "You are not old enough to legally drive.";
         }
 
+        System.out.println(finalOut);
     }
 
 }
